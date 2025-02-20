@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    margin: 0px;
+    top: 0;
+    position: sticky;
+    padding: 20px 60px;
+    background: rgb(37,51,70);
+    background: radial-gradient(circle, rgba(37,51,70,1) 0%, rgba(20,29,48,1) 100%);
+    color: rgb(243, 248, 255);
+    
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    color: white;
+}
+
+#linkedin {
+    background-color: #4267b3;
+    color: white;
+}
+
+#github {
+    background-color: white;
+}
+
+.header-content {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#header-name {
+    border-bottom: solid rgb(255, 187, 0);
+    font-size: 20px;
+
+}
+
+#header-contacts {
+    float: right;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+#header-contacts-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-contacts-link {
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* Content */
+
+body {
+    margin: 0px;
+    background-color: #c7d6e4;
+    box-shadow: inset 0px 0px 28px -14px rgba(0,0,0,0.75);
+}
+
+.container {
+    margin: 10px 50px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #ffff;
+    align-items: center;
+    box-shadow: 0px 0px 28px -14px rgba(0,0,0,0.75), inset 0px 0px 8px 2px rgba(255,255,255,1);
+    font-size: 20px;
+
+}
+
+.container-2 {
+    padding-left: 10px;
+    border-left: solid rgb(255, 187, 0) 7px;
+    font-size: 20px;
+
+}
+
+/* Content - Profile */
+
+#profile {
+    display: flex;
+    color: #2e3233;
+}
+
+#profile-img {
+    width: 11%;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+#profile-text {
+    margin: 0px 80px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#profile h1 {
+    font-size: 50px;
+}
+
+
+#profile p {
+    width: 100%;
+    font-size: 20px;
+}
+
+/* Tecnologies */
+
+@media (max-width: 1005px) {
+    
+    #header-contacts {
+        float: none;
+        display: block;
+    }
+
+    header {
+        padding: 5px 60px;
+        flex-wrap: wrap;
+    }
+
+    #profile {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #profile h1 {
+        margin-top: 3px;
+        text-align: center;
+    }
+
+    #profile-text {
+        margin: 0px;
+    }
+
+    #profile-img {
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .container {
+        border-radius: 0px;
+        margin: 10px 0px;
+    }
+
+}
